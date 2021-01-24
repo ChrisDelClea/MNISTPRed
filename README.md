@@ -1,2 +1,1 @@
-# OpenLKG
-Building an Open Legal Knowledge Graph
+# MNIST Number Prediction 
