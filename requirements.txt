@@ -11,6 +11,7 @@ streamlit-drawable-canvas
 
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==1.7.0+cpu
+torchvision==0.7.0
 
 # --find-links https://download.pytorch.org/whl/torch_stable.html
 #torch-1.7.0+cpu
