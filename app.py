@@ -7,6 +7,7 @@ from streamlit_drawable_canvas import st_canvas
 # from train import Net
 from scipy.ndimage.interpolation import zoom
 import os
+import layout
 
 class Net(nn.Module):
     def __init__(self):
@@ -39,6 +40,7 @@ def rgb2gray(rgb):
     return np.dot(rgb[...,:3], [0.299, 0.587, 0.144])
 
 def main():
+    layout.footer()
     st.title("MNIST Number Prediction")
     left_column, right_column = st.beta_columns(2)
     PATH = "./mnist_cnn.pt"

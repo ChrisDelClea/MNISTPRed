@@ -4,7 +4,7 @@ pandas
 streamlit
 matplotlib
 streamlit-drawable-canvas
-
+htbuilder
 
 # conda install pytorch cpuonly => works
 # conda install pytorch 
@@ -12,7 +12,7 @@ streamlit-drawable-canvas
 # torchvision==0.7.0+cpu
 
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.7.0+cpu
+torch==1.6.0+cpu
 torchvision==0.7.0+cpu
 # torchaudio-0.7.0+cpu
 
