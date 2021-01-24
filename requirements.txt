@@ -3,7 +3,7 @@ pandas
 streamlit
 matplotlib
 streamlit-drawable-canvas
-scipy==1.6.0
+scipy==1.5.4
 
 # conda install pytorch cpuonly => works
 # conda install pytorch 
