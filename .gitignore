@@ -29,7 +29,6 @@ MANIFEST
 turcy/.idea/
 .idea/
 MNIST/
-mnist_cnn.pt
 mnist.py
 # PyInstaller
 #  Usually these files are written by a python script from a template

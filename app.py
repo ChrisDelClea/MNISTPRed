@@ -1,15 +1,7 @@
 import torch
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-import torchvision
-from torchvision import transforms, datasets
 import streamlit as st
-import pandas as pd
 import numpy as np
-from PIL import Image
 from streamlit_drawable_canvas import st_canvas
-import matplotlib.pyplot as plt
 from train import Net
 from scipy.ndimage.interpolation import zoom
 import os
@@ -29,22 +21,21 @@ def main():
     # model.eval()
     # st.write(model.eval())
 
-
     # Create a canvas component
     with left_column:
         st.header("Draw a number")
         st.subheader("[0-9]")
         canvas_result = st_canvas(
-            fill_color="rgb(0, 0, 0)",  # Fixed fill color with some opacity
-            # stroke_width="1, 25, 3",
-            stroke_width = 10,
-            stroke_color="#FFFFFF",
-            background_color="#000000",
-            update_streamlit=True,
-            width=224,
-            height=224,
-            drawing_mode="freedraw",
-            key="canvas",
+                fill_color="rgb(0, 0, 0)",  # Fixed fill color with some opacity
+                # stroke_width="1, 25, 3",
+                stroke_width = 10,
+                stroke_color="#FFFFFF",
+                background_color="#000000",
+                update_streamlit=True,
+                width=224,
+                height=224,
+                drawing_mode="freedraw",
+                key="canvas",
         )
 
     # Do something interesting with the image data and paths
